@@ -1,1 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Automation System</title>
 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f6fa;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #00509e;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .welcome {
+            background-color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        .welcome h2 {
+            color: #003366;
+        }
+
+        .form-section {
+            background-color: white;
+            padding: 30px;
+            margin-top: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        .form-section h2 {
+            color: #003366;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #003366;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #00509e;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Passport Automation System</h1>
+        <p>Online Passport Application and Management System</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#application">Apply Passport</a>
+        <a href="#status">Application Status</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- Home Section -->
+        <section id="home" class="welcome">
+            <h2>Welcome to Passport Automation System</h2>
+
+            <p>
+                This system helps users submit and manage passport
+                applications electronically.
+            </p>
+
+            <p>
+                Applicants can enter their personal information,
+                submit passport applications and check their
+                application status.
+            </p>
+        </section>
+
+        <!-- Passport Application Form -->
+        <section id="application" class="form-section">
+
+            <h2>Passport Application Form</h2>
+
+            <form>
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your full name" required>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+
+                <label for="phone">Mobile Number</label>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="Enter your mobile number" required>
+
+                <label for="address">Address</label>
+                <textarea id="address" name="address"
+                          rows="4"
+                          placeholder="Enter your address"></textarea>
+
+                <label for="passportType">Passport Type</label>
+                <select id="passportType" name="passportType">
+                    <option value="">Select Passport Type</option>
+                    <option value="new">New Passport</option>
+                    <option value="renewal">Passport Renewal</option>
+                    <option value="reissue">Passport Re-Issue</option>
+                </select>
+
+                <label for="document">Upload Document</label>
+                <input type="file" id="document" name="document">
+
+                <button type="submit">Submit Application</button>
+                <button type="reset">Reset</button>
+
+            </form>
+
+        </section>
+
+        <!-- Application Status -->
+        <section id="status" class="form-section">
+
+            <h2>Check Application Status</h2>
+
+            <form>
+
+                <label for="applicationNumber">
+                    Application Number
+                </label>
+
+                <input type="text"
+                       id="applicationNumber"
+                       name="applicationNumber"
+                       placeholder="Enter application number"
+                       required>
+
+                <button type="submit">
+                    Check Status
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="form-section">
+
+            <h2>Contact Us</h2>
+
+            <p>
+                For assistance with passport applications,
+                please contact the system administrator.
+            </p>
+
+            <p>
+                Email: support@example.com
+            </p>
+
+            <p>
+                Phone: +91 XXXXX XXXXX
+            </p>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <p>
+            &copy; 2026 Passport Automation System |
+            Academic Project
+        </p>
+    </footer>
+
+</body>
+</html>
